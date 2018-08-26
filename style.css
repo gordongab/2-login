@@ -1,0 +1,148 @@
+body {
+    height: 100vh;
+    margin: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    font-size: 16px;
+    background-color: #4a2222;
+    line-height: 1.5;
+}
+
+header {
+    margin-bottom: 5px;
+    
+}
+
+h1 {
+   
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px;
+    line-height: 2;
+    color: white;
+}
+
+p {
+    padding: 5px;
+}
+
+main {
+    height: 100%;
+    display: grid;
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-columns: 45% 55%;
+    grid-gap: 5px;
+}
+
+.box {
+    height: 100%;
+    display: grid;
+    grid-row: span 1;
+    grid-column: span 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.happy {
+    background-color: rgb(243, 24, 53);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    padding-top: 90px;
+    padding-left: 10px;
+}
+
+.lorem1, .lorem2 {
+    background-color: rgb(81, 179, 147);
+    font-weight: bold;
+}
+
+.lorem3 {
+    background-color: rgb(81, 179, 147);
+    
+    font-weight: bold;
+    
+}
+
+.tie {
+    background: url(images/tie.png);
+    grid-column: span 2;
+    height: 150px;
+}
+
+.sign {
+    background: url(images/sign.jpg);
+    grid-row: span 2;
+}
+
+.moped {
+    background: url(images/moped.jpg);
+    grid-column: span 2;
+    height: 100px;
+}
+
+.light {
+    background: url(images/light.jpg);
+    height: auto;
+}
+
+.sax {
+    background: url(images/sax.jpg);
+    grid-column: span 2;
+    height: auto;
+}
+
+
+.flower {
+    background: url(images/flower.jpg);
+    height: auto;
+}
+
+
+.image {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+@media only screen and (min-width: 600px) {
+
+    main {
+        height: auto;
+        display: grid;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: 45% 55% 45% 55% 45%;
+        grid-gap: 5px;
+        grid-row: span 1;
+    }
+    
+    .happy, .light, .flower {
+        grid-row: span 1;
+        height: auto;
+    }
+
+    .lorem1, .lorem2, .lorem3 {
+        grid-row: span 2;
+        height: auto;
+        
+        }
+
+    .tie {
+        grid-column: span 2;
+        grid-row: span 2;
+        height: auto;
+          
+    }
+
+    .moped {
+        grid-column: span 2;
+        height: auto;
+    }
+     
+
+    .sign {
+        grid-row: span 2;
+        grid-column: span 1;
+        height: auto;
+    }
+}
